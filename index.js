@@ -20,6 +20,11 @@ app.use(cors({
 }));
 app.use(express.json({ limit: "30mb" })); // allow large payloads for file base64
 
+app.get("/", (req, res) => {
+  console.log("Server is running, root route accessed");
+  res.json({ message: "Server is running", status: "ok" });
+});
+
 app.get("/api/health", (req, res) => res.json({ ok: true }));
 
 /**
