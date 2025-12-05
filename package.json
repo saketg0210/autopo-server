@@ -1,12 +1,6 @@
 {
-  "name": "gemini-proxy",
+  "name": "autopo-backend",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "node ./api/health.js" 
-  },
-  "dependencies": {
-    "node-fetch": "^3.3.2",
-    "dotenv": "^16.0.0"
-  }
+  "dependencies": {}
 }
